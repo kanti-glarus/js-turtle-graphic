@@ -147,7 +147,7 @@ class Turtle {
       this.arrowCtx.lineWidth = 0;
       this.arrowCtx.moveTo(0, -size);
       this.arrowCtx.lineTo(-size, -size);
-      this.arrowCtx.lineTo(0, 0);
+      this.arrowCtx.lineTo(0, 10);
       this.arrowCtx.lineTo(size, -size);
       this.arrowCtx.lineTo(0, -size);
       this.arrowCtx.closePath();
