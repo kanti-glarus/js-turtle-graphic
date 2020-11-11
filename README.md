@@ -3,7 +3,7 @@
 This is an attempt to recreate the famous Python Turtle Graphics  in JavaScript, using the canvas.  
 For the moment the only available commands are `forward`, `backward` `right` and `left`.
 
-## Exemple
+## Example
 We can use this to draw a spiral recursively with this simple code:
 
 ```javascript
