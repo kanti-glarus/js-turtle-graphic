@@ -1,9 +1,5 @@
 class Turtle {
-  constructor(canvas, arrowCanvas) {
-    this.ctx = canvas.getContext("2d");
-    this.arrowCtx = arrowCanvas.getContext("2d");
-    this.width = canvas.width;
-    this.height = canvas.height;
+  init() {
     this.pos = {
       x: Math.floor(this.width / 2) + .5,
       y: Math.floor(this.height / 2) + .5
@@ -21,8 +17,6 @@ class Turtle {
     this.t = 1;
 
     this.vertices = [{x: this.pos.x, y: this.pos.y, heading: this.heading}];
-
-    this.timerId;
     this.lastTime = 0;
 
     // Animation variables
@@ -31,6 +25,15 @@ class Turtle {
     this.time;
 
     this.isFilling = false;
+  }
+
+  constructor(canvas, arrowCanvas) {
+    this.ctx = canvas.getContext("2d");
+    this.arrowCtx = arrowCanvas.getContext("2d");
+    this.width = canvas.width;
+    this.height = canvas.height;
+
+    this.init();
   }
 
   requestAnimationFrame(callback, element) {
@@ -266,5 +269,15 @@ class Turtle {
    */
   left(deg) {
     this.right(-deg);
+  }
+
+  /**
+   * Clear the turtle screen
+   */
+  clear() {
+    this.arrowCtx.clearRect(0, 0, this.width, this.height);
+    this.ctx.clearRect(0, 0, this.width, this.height);
+    
+    this.init();
   }
 }
