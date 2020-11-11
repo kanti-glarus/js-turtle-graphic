@@ -3,6 +3,19 @@
 This is an attempt to recreate the famous Python Turtle Graphics  in JavaScript, using the canvas.  
 For the moment the only available commands are `forward`, `backward` `right` and `left`.
 
+## Include Turtle.js
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kanti-glarus/js-turtle-graphic@master/turtle.js"></script>
+```
+
+## HTML-Setup
+See the two examples:
+
+- [Minimal Setup](./minimal.html)
+- [Sierpinski Triangle](./index.html)
+
+
 ## Example
 We can use this to draw a spiral recursively with this simple code:
 
