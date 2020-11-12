@@ -5,12 +5,19 @@ For the moment the only available commands are `forward`, `backward` `right` and
 
 ## Include Turtle.js
 
+You can include `turtle.js` directly from GitHub:
+
 ```html
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kanti-glarus/js-turtle-graphic@master/turtle.js"></script>
 ```
 
+Or by a specific commit:
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kanti-glarus/js-turtle-graphic@0189037/turtle.js"></script>
+```
+
 ## HTML-Setup
-See the two examples:
+See our two examples:
 
 - [Minimal Setup](./minimal.html)
 - [Sierpinski Triangle](./index.html)

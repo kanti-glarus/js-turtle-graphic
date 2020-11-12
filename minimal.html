@@ -25,24 +25,24 @@
     <canvas id="c"></canvas>
 
     <script>
-			const canvas = document.getElementById('c');
+      const canvas = document.getElementById('c');
       const arrowCanvas = document.getElementById('a');
       canvas.width = 600;
       canvas.height = 600;
       arrowCanvas.width = 600;
       arrowCanvas.height = 600;
-			const turtle = new Turtle(canvas, arrowCanvas);
+      const turtle = new Turtle(canvas, arrowCanvas);
 
-			function drawSpiral(turtle, lineLen) {
-				if (lineLen > 0) {
-					turtle.forward(lineLen);
-					turtle.left(90);
-					drawSpiral(turtle, lineLen-5);
-				}
-			}
+      function drawSpiral(turtle, lineLen) {
+        if (lineLen > 0) {
+          turtle.forward(lineLen);
+          turtle.left(90);
+          drawSpiral(turtle, lineLen-5);
+        }
+      }
 
-			drawSpiral(turtle, 250);
+      drawSpiral(turtle, 250);
       turtle.draw();
-		</script>
+    </script>
   </body>
 </html>

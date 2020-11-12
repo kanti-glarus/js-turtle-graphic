@@ -25,26 +25,26 @@
     <canvas id="c"></canvas>
 
     <script>
-			var canvas = document.getElementById('c');
+      var canvas = document.getElementById('c');
       var arrowCanvas = document.getElementById('a');
       var context = canvas.getContext("2d");
-			canvas.width = window.innerWidth;
-			canvas.height = window.innerHeight;
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
       arrowCanvas.width = window.innerWidth;
-			arrowCanvas.height = window.innerHeight;
-			var turtle = new Turtle(canvas, arrowCanvas);
+      arrowCanvas.height = window.innerHeight;
+      var turtle = new Turtle(canvas, arrowCanvas);
 
       /**
        * Draw a spiral
        */
-			/*function drawSpiral(turtle, lineLen) {
-				if (lineLen > 0) {
-					turtle.forward(lineLen);
-					turtle.left(90);
-					drawSpiral(turtle, lineLen-5);
-				}
-			}
-			drawSpiral(turtle, 100);
+      /*function drawSpiral(turtle, lineLen) {
+        if (lineLen > 0) {
+          turtle.forward(lineLen);
+          turtle.left(90);
+          drawSpiral(turtle, lineLen-5);
+        }
+      }
+      drawSpiral(turtle, 100);
       turtle.draw();*/
 
       /**
@@ -112,6 +112,6 @@
       drawTriangle(size, size/2, window.innerWidth/2, turtle);
       turtle.draw();
 
-		</script>
+    </script>
   </body>
 </html>
